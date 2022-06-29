@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+             <img src="logo-min1.png" alt="" class="logo_img">
+             <h1 class="heading">Аналитика рекламы</h1>
+            </div>
+            <div class="heading_description">
+                Введите показатели
+            </div>
+        </div>
+    </header>
+    <section class="inputs_section">
+        <div class="container">
+            <div class="inputs">
+                <input type="text" class="budget inputs_text" id="budget" placeholder="Бюджет">
+                <input type="text" class="leads inputs_text" id="leads" placeholder="Обращения">
+                <input type="text" class="clicks inputs_text" id="clicks" placeholder="Клики">
+                <input type="text" class="sales inputs_text" id="sales" placeholder="Продажи">
+            </div>
+        </div>
+    </section>
+    <section class="calculate_inputs_section">
+        <div class="container">
+            <div class="calculate_inputs">
+            <input type="button" class="calculate_button calculate_buttons_text" id="calculate" onclick="calculate()" value="Посчитать">
+            <input type="button" class="delete_all calculate_buttons_text" id="delete" onclick="deleteAll()" value="Удалить">
+        </div>
+        </div>
+    </section>
+    <section class="results_section" id="results_section">
+        <div class="container">
+            <div class="results_heading" id="results_heading">
+                
+            </div>
+            <div class="results_text">
+                <div class="cpc_cpl">
+                <div class="cpc_result res_txt deleteAllResults" id="cpc_result">
+                    
+                </div>
+                <div class="cpl_result res_txt deleteAllResults" id="cpl_result">
+                    
+                </div>
+            </div>
+            <div class="cpl_salesConv">
+                <div class="cps_result res_txt deleteAllResults" id="cps_result">
+                    
+                </div>
+                <div class="salesCov_result res_txt deleteAllResults" id="salesConv_result">
+                   
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <secton class="analyz" id="analyz">
+        <div class="container">
+            <div class="lowResults">
+            <div class="lowCpc" id="lowCpc">
+                <h3 class="lowCpc_heading low_results_heading deleteAllResults" id="lowCpc_heading">
+
+                </h3>
+                <div class="lowCpc_description low_results_description deleteAllResults" id="lowCpc_description">
+
+                </div>
+            </div>
+            <div class="lowCpl" id="lowCpl">
+                <h3 class="lowCpl_heading low_results_heading deleteAllResults" id="lowCpl_heading">
+
+                </h3>
+                <div class="lowCpl_description low_results_description deleteAllResults" id="lowCpl_description">
+
+                </div>
+            </div>
+            <div class="lowCps" id="lowCps">
+                <h3 class="lowCps_heading low_results_heading deleteAllResults" id="lowCps_heading">
+
+                </h3>
+                <div class="lowCps_description low_results_description deleteAllResults" id="lowCps_description">
+
+                </div>
+            </div>
+            <div class="lowSalesConv" id="lowSalesConv">
+                <h3 class="salesConv_heading low_results_heading deleteAllResults" id="lowSalesConv_heading">
+
+                </h3>
+                <div class="lowCpc_description low_results_description deleteAllResults" id="lowSalesConv_description">
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </secton>
+</body>
+</html>
